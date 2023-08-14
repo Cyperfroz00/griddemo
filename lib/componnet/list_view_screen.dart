@@ -19,7 +19,13 @@ class _ListviewscreenState extends State<Listviewscreen> {
       body: Container(
         child: ListView(
           children: [
-            
+            Container(
+              child: ListTile(
+              leading: Icon(Icons.home),
+                title: Text('Home'),
+                trailing: Icon(Icons.more_horiz),
+              ),
+            ),
           ],
         ),
       ),
