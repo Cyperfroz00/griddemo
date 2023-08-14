@@ -34,8 +34,8 @@ class _ListviewscreenState extends State<Listviewscreen> {
               margin: EdgeInsets.all(5),
               color: Colors.yellow[500],
               child: ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Home'),
+                leading: Icon(Icons.map),
+                title: Text('Map'),
                 trailing: Icon(Icons.more_horiz),
               ),
             ),
@@ -43,8 +43,8 @@ class _ListviewscreenState extends State<Listviewscreen> {
               margin: EdgeInsets.all(5),
               color: Colors.pinkAccent,
               child: ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Home'),
+                leading: Icon(Icons.phone_android),
+                title: Text('Phone'),
                 trailing: Icon(Icons.more_horiz),
               ),
             ),
@@ -52,8 +52,8 @@ class _ListviewscreenState extends State<Listviewscreen> {
               margin: EdgeInsets.all(5),
               color: Colors.pinkAccent,
               child: ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Home'),
+                leading: Icon(Icons.call),
+                title: Text('Call'),
                 trailing: Icon(Icons.more_horiz),
               ),
             ),
