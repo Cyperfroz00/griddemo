@@ -12,6 +12,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
         title: Text('ListViewDemo'),
         backgroundColor: Colors.blue,
