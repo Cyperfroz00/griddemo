@@ -16,6 +16,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
       appBar: AppBar(
         title: Text('ListViewDemo'),
         backgroundColor: Colors.blue,
+        titleTextStyle: TextStyle(fontWeight: FontWeight.bold),
       ),
       body: Container(
         child: ListView(
@@ -31,7 +32,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
             ),
             Container(
               margin: EdgeInsets.all(5),
-              color: Colors.pinkAccent,
+              color: Colors.yellow,
               child: ListTile(
                 leading: Icon(Icons.home),
                 title: Text('Home'),
