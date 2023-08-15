@@ -34,14 +34,13 @@ class _ListviewscreenState extends State<Listviewscreen> {
                     ),
                   ),
                 ),
-                SizedBox(),
                 Container(
                   margin: EdgeInsets.all(5),
                   color: Colors.yellow[500],
                   child: ListTile(
                     leading: Icon(Icons.app_registration),
                     title: Center(child: Text('For Enrollment')),
-                    //trailing: Icon(Icons.more_horiz),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
@@ -50,7 +49,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   child: ListTile(
                     leading: Icon(Icons.settings_backup_restore),
                     title: Center(child: Text('Manage Enrollment')),
-                    //trailing: Icon(Icons.more_horiz),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
@@ -59,7 +58,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   child: ListTile(
                     leading: Icon(Icons.event_note_outlined),
                     title: Center(child: Text('Events')),
-                    //trailing: Icon(Icons.more_horiz),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
@@ -82,47 +81,92 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  color: Colors.brown,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.branding_watermark),
+                    title: Center(child: Text('Campus')),
+                    trailing: Icon(Icons.more_horiz),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(5),
+                  color: Colors.greenAccent,
+                  child: ListTile(
+                    leading: Icon(Icons.app_registration),
+                    title: Center(child: Text('Apply'),),
+                    trailing: Icon(Icons.more_horiz),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(5),
+                  color: Colors.amber,
+                  child: ListTile(
+                    leading: Icon(Icons.location_pin),
+                    title: Center(child: Text('Location'),),
+                    trailing: Icon(Icons.more_horiz),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(5),
+                  color: Colors.black54,
+                  child: ListTile(
+                    leading: Icon(Icons.chat),
+                    title: Center(child: Text('FAQ'),),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
                   color: Colors.green,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.school_rounded),
+                    title: Center(child: Text('Scholarship'),),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  color: Colors.red,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.video_collection),
+                    title: Center(child: Text('Videos'),),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  color: Colors.yellowAccent,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.people),
+                    title: Center(child: Text('Profile'),),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  color: Colors.blue,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.logout),
+                    title: Center(child: Text('Logout'),),
+                    trailing: Icon(Icons.more_horiz),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(5),
+                  color: Colors.greenAccent,
+                  child: ListTile(
+                    leading: Icon(Icons.info),
+                    title: Center(child: Text('About US'),),
+                    trailing: Icon(Icons.more_horiz),
+                  ),
+                ),
+                SizedBox(height: 5,),
+                Container(
+                  margin: EdgeInsets.all(5),
+                  //color: Colors.greenAccent,
+                  child: ListTile(
+                    //leading: Icon(Icons.info),
+                    title: Center(child: Text('App Version V21.0.0 develop by Team BBU'),),
                   ),
                 ),
               ],
@@ -131,7 +175,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
         ),
       ),
       appBar: AppBar(
-        title: Text('ListViewDemo'),
+        title: Text('Build Bright University'),
         backgroundColor: Colors.indigo,
       ),
       body: Container(
