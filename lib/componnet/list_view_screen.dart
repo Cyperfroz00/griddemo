@@ -22,7 +22,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(
-                      Radius.circular(250),
+                      Radius.circular(25),
                     )),
                     width: 150,
                     height: 150,
@@ -93,7 +93,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.greenAccent,
                   child: ListTile(
                     leading: Icon(Icons.app_registration),
-                    title: Center(child: Text('Apply'),),
+                    title: Center(
+                      child: Text('Apply'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -102,7 +104,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.amber,
                   child: ListTile(
                     leading: Icon(Icons.location_pin),
-                    title: Center(child: Text('Location'),),
+                    title: Center(
+                      child: Text('Location'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -111,7 +115,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.black54,
                   child: ListTile(
                     leading: Icon(Icons.chat),
-                    title: Center(child: Text('FAQ'),),
+                    title: Center(
+                      child: Text('FAQ'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -120,7 +126,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.green,
                   child: ListTile(
                     leading: Icon(Icons.school_rounded),
-                    title: Center(child: Text('Scholarship'),),
+                    title: Center(
+                      child: Text('Scholarship'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -129,7 +137,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.red,
                   child: ListTile(
                     leading: Icon(Icons.video_collection),
-                    title: Center(child: Text('Videos'),),
+                    title: Center(
+                      child: Text('Videos'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -138,7 +148,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.yellowAccent,
                   child: ListTile(
                     leading: Icon(Icons.people),
-                    title: Center(child: Text('Profile'),),
+                    title: Center(
+                      child: Text('Profile'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -147,7 +159,9 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.blue,
                   child: ListTile(
                     leading: Icon(Icons.logout),
-                    title: Center(child: Text('Logout'),),
+                    title: Center(
+                      child: Text('Logout'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -156,17 +170,23 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   color: Colors.greenAccent,
                   child: ListTile(
                     leading: Icon(Icons.info),
-                    title: Center(child: Text('About US'),),
+                    title: Center(
+                      child: Text('About US'),
+                    ),
                     trailing: Icon(Icons.more_horiz),
                   ),
                 ),
-                SizedBox(height: 5,),
+                SizedBox(
+                  height: 5,
+                ),
                 Container(
                   margin: EdgeInsets.all(5),
                   //color: Colors.greenAccent,
                   child: ListTile(
                     //leading: Icon(Icons.info),
-                    title: Center(child: Text('App Version V21.0.0 develop by Team BBU'),),
+                    title: Center(
+                      child: Text('App Version V21.0.0 develop by Team BBU'),
+                    ),
                   ),
                 ),
               ],
@@ -175,8 +195,21 @@ class _ListviewscreenState extends State<Listviewscreen> {
         ),
       ),
       appBar: AppBar(
-        title: Text('Build Bright University'),
+        title: const Text(
+          'Build Bright University',
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Colors.indigo,
+        actions: [
+          Icon(
+            Icons.notifications,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.language,
+            color: Colors.white,
+          ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -194,6 +227,8 @@ class _ListviewscreenState extends State<Listviewscreen> {
               ),
             ),
             Container(
+              width: 200,
+              height: 200,
               margin: EdgeInsets.all(5),
               color: Colors.yellow[500],
               child: ListTile(
@@ -203,6 +238,8 @@ class _ListviewscreenState extends State<Listviewscreen> {
               ),
             ),
             Container(
+              width: 200,
+              height: 200,
               margin: EdgeInsets.all(5),
               color: Colors.pinkAccent,
               child: ListTile(
