@@ -13,23 +13,26 @@ class _ListviewscreenState extends State<Listviewscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.white,
         child: Container(
           height: 150,
+          width: 150,
           child: ListView(
             children: [
               Container(
-                width: 200,
-                height: 200,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(250),
+                    ),
+                    color: Colors.pinkAccent),
+                width: 150,
+                height: 150,
                 margin: EdgeInsets.all(5),
-                color: Colors.pinkAccent,
-                child: ListTile(
-                  leading: Icon(Icons.home),
-                  title: Text('Home'),
-                  trailing: Icon(Icons.more_horiz),
-                ),
-              ),SizedBox(),
+                // width: 100,
+                // height: 100,
+                child: ListTile(),
+              ),
+              SizedBox(),
               Container(
                 margin: EdgeInsets.all(5),
                 color: Colors.yellow[500],
@@ -63,13 +66,13 @@ class _ListviewscreenState extends State<Listviewscreen> {
       ),
       appBar: AppBar(
         title: Text('ListViewDemo'),
-        backgroundColor: Colors.blue,
-        titleTextStyle: TextStyle(fontWeight: FontWeight.bold),
+        backgroundColor: Colors.indigo,
       ),
       body: Container(
         child: ListView(
           children: [
             Container(
+              // decoration: BoxDecoration(borderRadius:),
               width: 200,
               height: 200,
               margin: EdgeInsets.all(5),
