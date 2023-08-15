@@ -15,26 +15,22 @@ class _ListviewscreenState extends State<Listviewscreen> {
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: Container(
-          height: 150,
-          width: 150,
           child: Container(
             child: ListView(
               children: [
                 Center(
                   child: Container(
-
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(
-                          Radius.circular(250),
-                        ),
-                        color: Colors.pinkAccent),
+                      Radius.circular(250),
+                    )),
                     width: 150,
                     height: 150,
                     margin: EdgeInsets.all(5),
                     // width: 100,
                     // height: 100,
                     child: Image.asset(
-                      'assets/images/ceo.jpg'
+                      'assets/images/ceo.jpg',
                     ),
                   ),
                 ),
@@ -43,18 +39,17 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   margin: EdgeInsets.all(5),
                   color: Colors.yellow[500],
                   child: ListTile(
-                    //leading: Icon(Icons.map),
-                    title: Text('Map'),
+                    leading: Icon(Icons.app_registration),
+                    title: Center(child: Text('For Enrollment')),
                     //trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  height: 150,
                   color: Colors.blue,
                   child: ListTile(
-                    ///leading: Icon(Icons.phone_android),
-                    title: Text('Phone'),
+                    leading: Icon(Icons.settings_backup_restore),
+                    title: Center(child: Text('Manage Enrollment')),
                     //trailing: Icon(Icons.more_horiz),
                   ),
                 ),
@@ -62,27 +57,27 @@ class _ListviewscreenState extends State<Listviewscreen> {
                   margin: EdgeInsets.all(5),
                   color: Colors.green,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
+                    leading: Icon(Icons.event_note_outlined),
+                    title: Center(child: Text('Events')),
                     //trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  color: Colors.pinkAccent,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.calendar_today_outlined),
+                    title: Center(child: Text('Calender')),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  color: Colors.white,
                   child: ListTile(
-                    //leading: Icon(Icons.call),
-                    title: Text('Call'),
-                    //trailing: Icon(Icons.more_horiz),
+                    leading: Icon(Icons.contact_mail),
+                    title: Center(child: Text('Contact')),
+                    trailing: Icon(Icons.more_horiz),
                   ),
                 ),
                 Container(
