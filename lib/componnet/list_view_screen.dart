@@ -227,10 +227,13 @@ class _ListviewscreenState extends State<Listviewscreen> {
         child: ListView(
           children: [
             Container(
-            //  width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.white,
+              ),
+              width: 200,
               height: 200,
               margin: EdgeInsets.all(5),
-              color: Colors.white,
+              //color: Colors.white,
               child: const ListTile(
           //      leading: Icon(Icons.home),
                 title: Text('Card'),
