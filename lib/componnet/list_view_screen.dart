@@ -226,30 +226,32 @@ class _ListviewscreenState extends State<Listviewscreen> {
         ],
       ),
       body: Container(
-        color: Colors.indigo[300],
+        margin: EdgeInsets.all(10),
+        color: Colors.blue[300],
         child: ListView(
           children: [
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.white,
               ),
               width: 200,
               height: 200,
-              margin: EdgeInsets.all(5),
               //color: Colors.white,
               child: const ListTile(
           //      leading: Icon(Icons.home),
                 title: Text('Card'),
           //      trailing: Icon(Icons.more_horiz),
               ),
+            ),SizedBox(
+              height: 10,
             ),
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.pinkAccent,
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.pinkAccent,
               ),
               width: 200,
               height: 200,
-              margin: EdgeInsets.all(5),
+
               //color: Colors.white,
               child: const ListTile(
                 //      leading: Icon(Icons.home),
@@ -257,27 +259,38 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 //      trailing: Icon(Icons.more_horiz),
               ),
             ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.black54,
-              ),
-              width: 200,
-              height: 200,
-              margin: EdgeInsets.all(5),
-              //color: Colors.white,
-              child: const ListTile(
-                //      leading: Icon(Icons.home),
-                title: Text('Messsages'),
-                //      trailing: Icon(Icons.more_horiz),
-              ),
+            SizedBox(
+            height: 10,
             ),
             Container(
+              margin: EdgeInsets.only(top: 5,bottom: 5),
+              child: Text('Message'),
+            ),
+            Container(
+             height: 250,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.yellowAccent,
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.yellowAccent,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Image 1'),
+                  Text('Image 2'),
+                  Container(
+                    child: Column(
+
+                    ),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(height: 5,),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.yellowAccent,
               ),
               width: 200,
               height: 200,
-              margin: EdgeInsets.all(5),
               //color: Colors.white,
               child: const ListTile(
                 //      leading: Icon(Icons.home),
