@@ -212,9 +212,12 @@ class _ListviewscreenState extends State<Listviewscreen> {
         ),
         backgroundColor: Colors.indigo,
         actions: [
-          Icon(
-            Icons.notifications,
-            color: Colors.white,
+          Container(
+            margin: EdgeInsets.all(10.0),
+            child: Icon(
+              Icons.notifications,
+              color: Colors.white,
+            ),
           ),
           Icon(
             Icons.language,
@@ -241,34 +244,45 @@ class _ListviewscreenState extends State<Listviewscreen> {
               ),
             ),
             Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.pinkAccent,
+              ),
               width: 200,
               height: 200,
               margin: EdgeInsets.all(5),
-              color: Colors.yellow[500],
+              //color: Colors.white,
               child: const ListTile(
-              //  leading: Icon(Icons.map),
-                title: Text('Map'),
-               // trailing: Icon(Icons.more_horiz),
+                //      leading: Icon(Icons.home),
+                title: Text('Sameple Certificate'),
+                //      trailing: Icon(Icons.more_horiz),
               ),
             ),
             Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.black54,
+              ),
               width: 200,
               height: 200,
               margin: EdgeInsets.all(5),
-              color: Colors.pinkAccent,
+              //color: Colors.white,
               child: const ListTile(
-                leading: Icon(Icons.phone_android),
-                title: Text('Phone'),
-                trailing: Icon(Icons.more_horiz),
+                //      leading: Icon(Icons.home),
+                title: Text('Messsages'),
+                //      trailing: Icon(Icons.more_horiz),
               ),
             ),
             Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(25),),color: Colors.yellowAccent,
+              ),
+              width: 200,
+              height: 200,
               margin: EdgeInsets.all(5),
-              color: Colors.green,
+              //color: Colors.white,
               child: const ListTile(
-                leading: Icon(Icons.call),
-                title: Text('Call'),
-                trailing: Icon(Icons.more_horiz),
+                //      leading: Icon(Icons.home),
+                title: Text('Slide'),
+                //      trailing: Icon(Icons.more_horiz),
               ),
             ),
           ],
