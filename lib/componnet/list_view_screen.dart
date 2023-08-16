@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Listviewscreen extends StatefulWidget {
@@ -20,18 +19,18 @@ class _ListviewscreenState extends State<Listviewscreen> {
               children: [
                 Center(
                   child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(
-                      Radius.circular(25),
-                    )),
-                    width: 150,
-                    height: 150,
                     margin: EdgeInsets.all(5),
-                    // width: 100,
-                    // height: 100,
                     child: Image.asset(
                       'assets/images/ceo.jpg',
                     ),
+                    width: 150,
+                    height: 150,
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    'PEN PONLOK',
+                    style: TextStyle(color: Colors.blue),
                   ),
                 ),
                 Container(
