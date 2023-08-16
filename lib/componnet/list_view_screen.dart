@@ -19,12 +19,24 @@ class _ListviewscreenState extends State<Listviewscreen> {
               children: [
                 Center(
                   child: Container(
+                    width: 150,
+                    height: 150,
                     margin: EdgeInsets.all(5),
                     child: Image.asset(
                       'assets/images/ceo.jpg',
                     ),
-                    width: 150,
-                    height: 150,
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    'PEN PONLOK',
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    'PEN PONLOK',
+                    style: TextStyle(color: Colors.blue),
                   ),
                 ),
                 Center(
@@ -211,18 +223,18 @@ class _ListviewscreenState extends State<Listviewscreen> {
         ],
       ),
       body: Container(
+        color: Colors.indigo[300],
         child: ListView(
           children: [
             Container(
-              // decoration: BoxDecoration(borderRadius:),
-              width: 200,
+            //  width: 200,
               height: 200,
               margin: EdgeInsets.all(5),
-              color: Colors.pinkAccent,
-              child: ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Home'),
-                trailing: Icon(Icons.more_horiz),
+              color: Colors.white,
+              child: const ListTile(
+          //      leading: Icon(Icons.home),
+                title: Text('Card'),
+          //      trailing: Icon(Icons.more_horiz),
               ),
             ),
             Container(
@@ -230,10 +242,10 @@ class _ListviewscreenState extends State<Listviewscreen> {
               height: 200,
               margin: EdgeInsets.all(5),
               color: Colors.yellow[500],
-              child: ListTile(
-                leading: Icon(Icons.map),
+              child: const ListTile(
+              //  leading: Icon(Icons.map),
                 title: Text('Map'),
-                trailing: Icon(Icons.more_horiz),
+               // trailing: Icon(Icons.more_horiz),
               ),
             ),
             Container(
@@ -241,7 +253,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
               height: 200,
               margin: EdgeInsets.all(5),
               color: Colors.pinkAccent,
-              child: ListTile(
+              child: const ListTile(
                 leading: Icon(Icons.phone_android),
                 title: Text('Phone'),
                 trailing: Icon(Icons.more_horiz),
@@ -250,7 +262,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
             Container(
               margin: EdgeInsets.all(5),
               color: Colors.green,
-              child: ListTile(
+              child: const ListTile(
                 leading: Icon(Icons.call),
                 title: Text('Call'),
                 trailing: Icon(Icons.more_horiz),
