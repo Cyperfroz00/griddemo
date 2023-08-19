@@ -20,11 +20,15 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 Center(
                   child: Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.indigo,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(5),
+                      ),
+                      color: Colors.indigo,
                     ),
                     child: Image.asset(
                       'assets/images/sidebar.jpg',
-                    ) ,height: 400,
+                    ),
+                    height: 400,
                   ),
                 ),
                 Center(
@@ -112,7 +116,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                 // color: Colors.amber,
+                  // color: Colors.amber,
                   child: ListTile(
                     leading: Icon(Icons.location_pin),
                     title: Center(
@@ -167,7 +171,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                 // color: Colors.blue,
+                  // color: Colors.blue,
                   child: ListTile(
                     leading: Icon(Icons.logout),
                     title: Center(
@@ -178,7 +182,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                //  color: Colors.greenAccent,
+                  //  color: Colors.greenAccent,
                   child: ListTile(
                     leading: Icon(Icons.info),
                     title: Center(
@@ -231,71 +235,95 @@ class _ListviewscreenState extends State<Listviewscreen> {
         child: ListView(
           children: [
             Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.grey,
+              margin: EdgeInsets.all(5),
+              child: Text(
+                'Information',
+                style: TextStyle(
+                    color: Colors.indigo,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
               ),
-              width: 200,
-              height: 200,
+            ),
+            Container(
+                margin: EdgeInsets.all(5),
+                child: Image.asset(
+                  'assets/images/sidebar.jpg',
+                )),
+            Container(
+              margin: EdgeInsets.all(5),
+              child: Text(
+                'Job Information',
+                style: TextStyle(
+                    color: Colors.indigo,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              child: Image.asset(
+                'assets/images/sidebar.jpg',
+              ),
               //color: Colors.white,
-              child: const ListTile(
-          //      leading: Icon(Icons.home),
-                title: Text('Card',style: TextStyle(color: Colors.white),),
-          //      trailing: Icon(Icons.more_horiz),
-              ),
-            ),SizedBox(
+            ),
+            SizedBox(
               height: 10,
             ),
             Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.indigo,
+              margin: EdgeInsets.all(5),
+              child: Text(
+                'Slide Show',
+                style: TextStyle(
+                    color: Colors.indigo,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
               ),
-              width: 200,
-              height: 200,
+            ),
 
-              //color: Colors.white,
-              child: const ListTile(
-                //      leading: Icon(Icons.home),
-                title: Text('Sameple Certificate',style: TextStyle(color: Colors.white),),
-                //      trailing: Icon(Icons.more_horiz),
-              ),
-            ),
-            SizedBox(
-            height: 10,
-            ),
             Container(
-              margin: EdgeInsets.only(top: 5,bottom: 5),
-              child: Text('Message',style: TextStyle(color: Colors.white),),
-            ),
-            Container(
-             height: 250,
+              height: 250,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(10),),color: Colors.grey,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+                color: Colors.grey,
               ),
               child: Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('Image 1',style: TextStyle(color: Colors.white),),
-                    Text('Image 2',style: TextStyle(color: Colors.white),),
+                    Text(
+                      'Image 1',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Text(
+                      'Image 2',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     Container(
-                      child: Column(
-
-                      ),
+                      child: Column(),
                     )
                   ],
                 ),
               ),
             ),
-            SizedBox(height: 5,),
-            Container (
+            SizedBox(
+              height: 5,
+            ),
+            Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.grey
-              ),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(5),
+                  ),
+                  color: Colors.grey),
               width: 200,
               height: 200,
               child: const ListTile(
                 //      leading: Icon(Icons.home),
-                title: Text('Slide',style: TextStyle(color: Colors.white),),
+                title: Text(
+                  'Slide',
+                  style: TextStyle(color: Colors.white),
+                ),
                 trailing: Icon(Icons.more_horiz),
               ),
             ),
