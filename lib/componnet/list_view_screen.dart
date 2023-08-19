@@ -19,12 +19,12 @@ class _ListviewscreenState extends State<Listviewscreen> {
               children: [
                 Center(
                   child: Container(
-                    width: 150,
-                    height: 150,
-                    margin: EdgeInsets.all(5),
-                    child: Image.asset(
-                      'assets/images/ceo.jpg',
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.indigo,
                     ),
+                    child: Image.asset(
+                      'assets/images/sidebar.jpg',
+                    ) ,height: 400,
                   ),
                 ),
                 Center(
@@ -35,19 +35,19 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Center(
                   child: Text(
-                    'PEN PONLOK',
+                    '09550990',
                     style: TextStyle(color: Colors.blue),
                   ),
                 ),
                 Center(
                   child: Text(
-                    'PEN PONLOK',
+                    'Email: Pen_Ponlok@yahoo.com',
                     style: TextStyle(color: Colors.blue),
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.yellow[500],
+                  //color: Colors.yellow[500],
                   child: ListTile(
                     leading: Icon(Icons.app_registration),
                     title: Center(child: Text('For Enrollment')),
@@ -56,7 +56,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.blue,
+                  //color: Colors.blue,
                   child: ListTile(
                     leading: Icon(Icons.settings_backup_restore),
                     title: Center(child: Text('Manage Enrollment')),
@@ -65,7 +65,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  //color: Colors.green,
                   child: ListTile(
                     leading: Icon(Icons.event_note_outlined),
                     title: Center(child: Text('Events')),
@@ -74,7 +74,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.pinkAccent,
+                  //color: Colors.pinkAccent,
                   child: ListTile(
                     leading: Icon(Icons.calendar_today_outlined),
                     title: Center(child: Text('Calender')),
@@ -83,7 +83,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.white,
+                  //color: Colors.white,
                   child: ListTile(
                     leading: Icon(Icons.contact_mail),
                     title: Center(child: Text('Contact')),
@@ -92,7 +92,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.brown,
+                  //color: Colors.brown,
                   child: ListTile(
                     leading: Icon(Icons.branding_watermark),
                     title: Center(child: Text('Campus')),
@@ -101,7 +101,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.greenAccent,
+                  //color: Colors.greenAccent,
                   child: ListTile(
                     leading: Icon(Icons.app_registration),
                     title: Center(
@@ -112,7 +112,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.amber,
+                 // color: Colors.amber,
                   child: ListTile(
                     leading: Icon(Icons.location_pin),
                     title: Center(
@@ -123,7 +123,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.black54,
+                  //color: Colors.black54,
                   child: ListTile(
                     leading: Icon(Icons.chat),
                     title: Center(
@@ -134,7 +134,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.green,
+                  //color: Colors.green,
                   child: ListTile(
                     leading: Icon(Icons.school_rounded),
                     title: Center(
@@ -145,7 +145,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.red,
+                  //color: Colors.red,
                   child: ListTile(
                     leading: Icon(Icons.video_collection),
                     title: Center(
@@ -156,7 +156,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.yellowAccent,
+                  //color: Colors.yellowAccent,
                   child: ListTile(
                     leading: Icon(Icons.people),
                     title: Center(
@@ -167,7 +167,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.blue,
+                 // color: Colors.blue,
                   child: ListTile(
                     leading: Icon(Icons.logout),
                     title: Center(
@@ -178,7 +178,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
                 ),
                 Container(
                   margin: EdgeInsets.all(5),
-                  color: Colors.greenAccent,
+                //  color: Colors.greenAccent,
                   child: ListTile(
                     leading: Icon(Icons.info),
                     title: Center(
@@ -227,19 +227,19 @@ class _ListviewscreenState extends State<Listviewscreen> {
       ),
       body: Container(
         margin: EdgeInsets.all(10),
-        color: Colors.blue[300],
+        color: Colors.white,
         child: ListView(
           children: [
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.grey,
               ),
               width: 200,
               height: 200,
               //color: Colors.white,
               child: const ListTile(
           //      leading: Icon(Icons.home),
-                title: Text('Card'),
+                title: Text('Card',style: TextStyle(color: Colors.white),),
           //      trailing: Icon(Icons.more_horiz),
               ),
             ),SizedBox(
@@ -247,7 +247,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
             ),
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.pinkAccent,
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.indigo,
               ),
               width: 200,
               height: 200,
@@ -255,7 +255,7 @@ class _ListviewscreenState extends State<Listviewscreen> {
               //color: Colors.white,
               child: const ListTile(
                 //      leading: Icon(Icons.home),
-                title: Text('Sameple Certificate'),
+                title: Text('Sameple Certificate',style: TextStyle(color: Colors.white),),
                 //      trailing: Icon(Icons.more_horiz),
               ),
             ),
@@ -264,37 +264,39 @@ class _ListviewscreenState extends State<Listviewscreen> {
             ),
             Container(
               margin: EdgeInsets.only(top: 5,bottom: 5),
-              child: Text('Message'),
+              child: Text('Message',style: TextStyle(color: Colors.white),),
             ),
             Container(
              height: 250,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.yellowAccent,
+                borderRadius: BorderRadius.all(Radius.circular(10),),color: Colors.grey,
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text('Image 1'),
-                  Text('Image 2'),
-                  Container(
-                    child: Column(
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text('Image 1',style: TextStyle(color: Colors.white),),
+                    Text('Image 2',style: TextStyle(color: Colors.white),),
+                    Container(
+                      child: Column(
 
-                    ),
-                  )
-                ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             SizedBox(height: 5,),
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.yellowAccent,
+                borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.grey
               ),
               width: 200,
               height: 200,
               //color: Colors.white,
               child: const ListTile(
                 //      leading: Icon(Icons.home),
-                title: Text('Slide'),
+                title: Text('Slide',style: TextStyle(color: Colors.white),),
                 //      trailing: Icon(Icons.more_horiz),
               ),
             ),
