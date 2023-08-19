@@ -287,17 +287,16 @@ class _ListviewscreenState extends State<Listviewscreen> {
               ),
             ),
             SizedBox(height: 5,),
-            Container(
+            Container (
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(5),),color: Colors.grey
               ),
               width: 200,
               height: 200,
-              //color: Colors.white,
               child: const ListTile(
                 //      leading: Icon(Icons.home),
                 title: Text('Slide',style: TextStyle(color: Colors.white),),
-                //      trailing: Icon(Icons.more_horiz),
+                trailing: Icon(Icons.more_horiz),
               ),
             ),
           ],
